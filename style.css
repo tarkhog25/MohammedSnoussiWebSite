@@ -152,7 +152,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 8rem 2rem 4rem;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .hero-content {
@@ -188,7 +188,7 @@ body {
 
 .hero-title {
     font-family: var(--font-display);
-    font-size: clamp(3rem, 10vw, 7rem);
+    font-size: clamp(3rem, 10vw, 6rem);
     font-weight: 800;
     line-height: 0.95;
     margin-bottom: 1.5rem;
@@ -736,6 +736,11 @@ section {
     
     .hero {
         padding: 6rem 1rem 3rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 12vw, 3.5rem);
+        word-break: break-word;
     }
     
     .hero-tags {
