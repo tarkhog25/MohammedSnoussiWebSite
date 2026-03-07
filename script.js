@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         requestAnimationFrame(animateCursor);
     }
     
-    animateCursor();
+    /*animateCursor(); It needs to be fixed */
     
     const navLinks = document.querySelectorAll('.nav-link:not(.cv-btn)');
     const sections = document.querySelectorAll('section[id]');
