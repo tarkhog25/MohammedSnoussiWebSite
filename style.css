@@ -759,3 +759,25 @@ section {
         left: -2.5rem;
     }
 }
+
+.game-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: var(--color-bg);
+    display: none;
+}
+.game-overlay.open { display: block; }
+.game-overlay iframe { width: 100%; height: 100%; border: 0; }
+#gameClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    padding: 0.5rem 0.9rem;
+    background: var(--color-surface-light);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    cursor: pointer;
+}
