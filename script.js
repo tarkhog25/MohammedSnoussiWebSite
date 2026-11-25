@@ -158,4 +158,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    const gameBtn = document.getElementById('gameBtn');
+const gameOverlay = document.getElementById('gameOverlay');
+const gameFrame = document.getElementById('gameFrame');
+
+gameBtn.addEventListener('click', () => {
+    if (!gameFrame.src) gameFrame.src = 'https://cyberpunk-tcg-sim.online';
+    gameOverlay.classList.add('open');
+});
+document.getElementById('gameClose').addEventListener('click', () => {
+    gameOverlay.classList.remove('open');
+});
+
+    
 });
